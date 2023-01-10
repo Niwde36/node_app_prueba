@@ -1,0 +1,35 @@
+
+
+###
+
+GET http://localhost:9003/api/usuarios HTTP/1.1
+
+###
+
+POST http://localhost:9003/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+   "usu_email": "233edwin377@gmail.com",
+   "usu_clave": "tralala",
+   "usu_nombres":"Edwin Leonardo",
+   "usu_apellidos":"Salazar Tales"
+}
+
+###
+
+DELETE http://localhost:9003/api/usuarios/usu_id/1 HTTP/1.1
+
+
+
+###
+
+PUT http://localhost:9003/api/usuarios/usu_id/2 HTTP/1.1
+Content-Type: application/json
+
+{
+   "usu_email": "Lore@gmail.com",
+   "usu_clave": "trakate",
+   "usu_nombres":"Lorena",
+   "usu_apellidos":"Saavadra"    
+}
